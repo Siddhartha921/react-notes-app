@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-container {
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.note-form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.note-form input,
+.note-form textarea,
+.note-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.note-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.note-form button {
+  cursor: pointer;
+}
+
+.cancel-button {
+  margin-top: 8px !important;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.note-list {
+  margin-top: 20px;
+}
+
+.note-item {
+  background: white;
+  padding: 18px;
+  margin-top: 12px;
+  border-radius: 10px;
+}
+
+.note-item h3 {
+  margin-top: 0;
+}
+
+.note-item p {
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.note-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.note-actions button {
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    width: 94%;
+    margin: 20px auto;
+  }
+}
